@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #D6DBDF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.WellnessListViewController">
+    <children>
+        <AnchorPane layoutX="29.0" layoutY="25.0" prefHeight="750.0" prefWidth="270.0" style="-fx-background-color: #5D6D7E;">
+            <children>
+                <Label layoutX="27.0" layoutY="14.0" text="LPG" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
+                </Label>
+                <Label layoutX="120.0" layoutY="50.0" text="Patient Care System" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Button fx:id="btnWellnessDetails" layoutX="53.0" layoutY="210.0" mnemonicParsing="false" onAction="#handleWellnessDetails" prefHeight="50.0" prefWidth="165.0" text="See Details">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnNewWellness" layoutX="53.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleNewWellness" prefHeight="50.0" prefWidth="165.0" text="Add New">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnSummaryViewWellness" layoutX="53.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleReturnToSummary" prefHeight="50.0" prefWidth="165.0" text="Return to Summary">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            <Label layoutX="42.0" layoutY="131.0" text="WELLNESS CHECKUPS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator layoutX="35.0" layoutY="82.0" prefWidth="200.0" />
+            <Button fx:id="btnDeleteWellness" layoutX="53.0" layoutY="385.0" mnemonicParsing="false" onAction="#handleDeleteWellness" prefHeight="50.0" prefWidth="165.0" text="Delete Checkup" textFill="#cd3333">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="tblWellnessList" layoutX="324.0" layoutY="25.0" prefHeight="750.0" prefWidth="650.0" style="-fx-background-color: d6dbdf; -fx-border-color: #5D6D7E;">
+            <columns>
+                <TableColumn fx:id="colDate" editable="false" prefWidth="120.0" text="Date" />
+                <TableColumn fx:id="colReason" editable="false" prefWidth="162.0" text="Reason" />
+                <TableColumn fx:id="colNotes" editable="false" prefWidth="365.0" text="Notes" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.PatientNewController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="25.0" minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="950.0" style="-fx-background-color: #5D6D7E;">
+         <children>
+            <Label layoutX="27.0" layoutY="14.0" text="LPG" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="120.0" layoutY="50.0" text="Patient Care System" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="309.0" prefWidth="70.0" text="ADDRESS" textAlignment="RIGHT" textFill="WHITE" />
+            <TextArea fx:id="txtAddressNew" layoutX="92.0" layoutY="305.0" prefHeight="100.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="420.0" prefWidth="70.0" text="*PHONE" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtPhoneNew" layoutX="92.0" layoutY="416.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="453.0" prefWidth="70.0" text="E-MAIL" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtEmailNew" layoutX="92.0" layoutY="449.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="488.0" prefWidth="70.0" text="*DOB" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtDobNew" layoutX="92.0" layoutY="484.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="522.0" prefWidth="70.0" text="*GENDER" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtGenderNew" layoutX="92.0" layoutY="518.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="557.0" prefWidth="70.0" text="*SSN" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtSsnNew" layoutX="92.0" layoutY="553.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="593.0" prefWidth="70.0" text="ETHNICITY" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtEthnicityNew" layoutX="92.0" layoutY="589.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="627.0" prefWidth="70.0" text="PHYSICIAN" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtPhysicianNew" layoutX="92.0" layoutY="623.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="399.0" prefWidth="100.0" text="CURRENT MEDS" textAlignment="RIGHT" textFill="WHITE" />
+            <TextArea fx:id="txtCurrentMedsNew" layoutX="560.0" layoutY="399.0" prefHeight="100.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="239.0" prefWidth="100.0" text="*PROVIDER" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtInsProvNew" layoutX="560.0" layoutY="235.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="272.0" prefWidth="100.0" text="*PHONE" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtInsPhoneNew" layoutX="560.0" layoutY="268.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="307.0" prefWidth="100.0" text="*POLICY NUMBER" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtInsPolicyNew" layoutX="560.0" layoutY="303.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label layoutX="564.0" layoutY="188.0" text="INSURANCE INFORMATION" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnSaveNew" layoutX="535.0" layoutY="568.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="50.0" prefWidth="165.0" text="Save">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="376.0" layoutY="110.0" text="New Patient" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnResetNew" layoutX="710.0" layoutY="568.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="50.0" prefWidth="165.0" text="Reset">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCancelNew" layoutX="710.0" layoutY="640.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="50.0" prefWidth="165.0" text="Cancel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="206.0" prefWidth="72.0" text="*FIRST NAME" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtFirstNameNew" layoutX="92.0" layoutY="202.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="239.0" prefWidth="70.0" text="*LAST NAME" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtLastNameNew" layoutX="92.0" layoutY="235.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="12.0" layoutY="274.0" prefWidth="70.0" text="MI" textAlignment="RIGHT" textFill="WHITE" />
+            <TextField fx:id="txtMiNew" layoutX="92.0" layoutY="270.0" prefHeight="25.0" prefWidth="300.0" />
+            <Label layoutX="30.0" layoutY="690.0" text="* Must not be blank" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

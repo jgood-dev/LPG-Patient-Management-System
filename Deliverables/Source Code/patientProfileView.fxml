@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #D6DBDF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.PatientProfileViewController">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="25.0" prefHeight="750.0" prefWidth="950.0" style="-fx-background-color: #5D6D7E;">
+         <children>
+            <Label layoutX="27.0" layoutY="14.0" text="LPG" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="120.0" layoutY="50.0" text="Patient Care System" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TabPane fx:id="tbpProfile" layoutX="25.0" layoutY="100.0" prefHeight="625.0" prefWidth="900.0" style="-fx-background-color: #5D6D7E;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Basic Profile">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #5D6D7E;">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="34.0" prefWidth="70.0" text="ADDRESS" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextArea fx:id="txtAddress" editable="false" layoutX="90.0" layoutY="30.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="145.0" prefWidth="70.0" text="PHONE" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtPhone" editable="false" layoutX="90.0" layoutY="141.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="178.0" prefWidth="70.0" text="E-MAIL" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtEmail" editable="false" layoutX="90.0" layoutY="174.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="213.0" prefWidth="70.0" text="DOB" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtDob" editable="false" layoutX="90.0" layoutY="209.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="247.0" prefWidth="70.0" text="GENDER" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtGender" editable="false" layoutX="90.0" layoutY="243.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="282.0" prefWidth="70.0" text="SSN" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtSsn" editable="false" layoutX="90.0" layoutY="278.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="318.0" prefWidth="70.0" text="ETHNICITY" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtEthnicity" editable="false" layoutX="90.0" layoutY="314.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="414.0" prefWidth="70.0" text="PHYSICIAN" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtPhysician" editable="false" layoutX="90.0" layoutY="410.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="229.0" prefWidth="100.0" text="CURRENT MEDS" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextArea fx:id="txtCurrentMeds" editable="false" layoutX="560.0" layoutY="229.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="69.0" prefWidth="100.0" text="PROVIDER" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtInsProv" editable="false" layoutX="560.0" layoutY="65.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="102.0" prefWidth="100.0" text="PHONE" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtInsPhone" editable="false" layoutX="560.0" layoutY="98.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="450.0" layoutY="137.0" prefWidth="100.0" text="POLICY NUMBER" textAlignment="RIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtInsPolicy" editable="false" layoutX="560.0" layoutY="133.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label layoutX="564.0" layoutY="22.0" text="INSURANCE INFORMATION" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="btnEditProfile" layoutX="516.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleEditProfile" prefHeight="50.0" prefWidth="165.0" text="Edit Profile">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnSaveProfile" disable="true" layoutX="270.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleSaveButton" opacity="0.0" prefHeight="50.0" prefWidth="165.0" text="Save">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnCancelProfile" disable="true" layoutX="466.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleCancelButton" opacity="0.0" prefHeight="50.0" prefWidth="165.0" text="Cancel">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnBackToList" layoutX="695.0" layoutY="406.0" mnemonicParsing="false" onAction="#handleBackToList" prefHeight="50.0" prefWidth="165.0" text="Back to Patient List">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnDeleteProfile" layoutX="384.0" layoutY="513.0" mnemonicParsing="false" onAction="#handleDeleteProfile" prefHeight="50.0" prefWidth="165.0" text="Delete Patient Profile" textFill="#eb2727">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Wellness Profile">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #5D6D7E;">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="34.0" prefWidth="100.0" text="# OF CHECKUPS" textFill="WHITE" />
+                              <TextField fx:id="txtNumCheckups" editable="false" layoutX="108.0" layoutY="30.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="68.0" prefWidth="100.0" text="MOST RECENT" textFill="WHITE" />
+                              <TextField fx:id="txtMostRecentCheckupDate" editable="false" layoutX="108.0" layoutY="64.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Separator layoutY="198.0" prefHeight="5.0" prefWidth="900.0" />
+                              <Label layoutX="14.0" layoutY="173.0" text="Most Recent Stats" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="450.0" layoutY="173.0" text="Average Stats" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="217.0" prefWidth="100.0" text="HEIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtHeightMostRec" editable="false" layoutX="108.0" layoutY="213.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="251.0" prefWidth="100.0" text="WEIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtWeightMostRec" editable="false" layoutX="108.0" layoutY="247.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="319.0" prefWidth="100.0" text="SYSTOLIC" textFill="WHITE" />
+                              <TextField fx:id="txtBpSysMostRecent" editable="false" layoutX="108.0" layoutY="315.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="353.0" prefWidth="100.0" text="DIASTOLIC" textFill="WHITE" />
+                              <TextField fx:id="txtBpDiaMostRecent" editable="false" layoutX="108.0" layoutY="349.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="208.0" layoutY="290.0" prefWidth="100.0" text="BLOOD PRESSURE" textFill="WHITE" />
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="405.0" prefWidth="100.0" text="HEART RATE" textFill="WHITE" />
+                              <TextField fx:id="txtHrMostRec" editable="false" layoutX="108.0" layoutY="401.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="-2.0" layoutY="442.0" prefWidth="100.0" text="CURRENT MEDS" textFill="WHITE" />
+                              <TextArea fx:id="txtCurrentMedsMostRec" editable="false" layoutX="108.0" layoutY="444.0" prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="431.0" layoutY="217.0" prefWidth="100.0" text="HEIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtHeightAvg" editable="false" layoutX="541.0" layoutY="213.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="431.0" layoutY="251.0" prefWidth="100.0" text="WEIGHT" textFill="WHITE" />
+                              <TextField fx:id="txtWeightAvg" editable="false" layoutX="541.0" layoutY="247.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="431.0" layoutY="319.0" prefWidth="100.0" text="SYSTOLIC" textFill="WHITE" />
+                              <TextField fx:id="txtBpSysAvg" editable="false" layoutX="541.0" layoutY="315.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="431.0" layoutY="353.0" prefWidth="100.0" text="DIASTOLIC" textFill="WHITE" />
+                              <TextField fx:id="txtBpDiaAvg" editable="false" layoutX="541.0" layoutY="349.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Label alignment="CENTER_RIGHT" layoutX="641.0" layoutY="290.0" prefWidth="100.0" text="BLOOD PRESSURE" textFill="WHITE" />
+                              <Label alignment="CENTER_RIGHT" layoutX="431.0" layoutY="405.0" prefWidth="100.0" text="HEART RATE" textFill="WHITE" />
+                              <TextField fx:id="txtHrAvg" editable="false" layoutX="541.0" layoutY="401.0" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #D0D3D4;" />
+                              <Button fx:id="btnSeeAllCheckup" layoutX="676.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleSeeAllCheckups" prefHeight="50.0" prefWidth="165.0" text="See All Checkups">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button fx:id="btnAddNewCheckup" layoutX="490.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleNewWellness" prefHeight="50.0" prefWidth="165.0" text="Add New">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Separator layoutX="444.0" layoutY="213.0" orientation="VERTICAL" prefHeight="334.0" prefWidth="1.0" />
+                              <Button fx:id="btnBackToList1" layoutX="676.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleBackToList" prefHeight="50.0" prefWidth="165.0" text="Back to Patient List">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <Label layoutX="511.0" layoutY="61.0" prefHeight="35.0" prefWidth="90.0" text="Patient:" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPatientName" layoutX="582.0" layoutY="61.0" prefHeight="35.0" prefWidth="343.0" text="Patient Name" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
